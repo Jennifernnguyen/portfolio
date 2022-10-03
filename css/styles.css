@@ -1,0 +1,842 @@
+/******* HEAD *******/
+
+body{
+    background-color:#f2f1ef;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 25px;
+    background-color: #f2f1ef;
+    padding: 0 20px;
+    margin-bottom: 100px;
+    
+  }
+  
+  .grid-container > div {
+    background-color: #f2f1ef;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column: 1 / span 1;
+    height: auto;
+  }
+  .item2 {
+    grid-column: 2 / span 2;
+  }
+  .item3 {
+    grid-column: 4 / span 2;
+  }
+  .item4 {
+    grid-column: 6 / span 2;
+  }
+
+  .grid-container img{
+      max-width: 100%;
+      height: auto;
+  }
+
+  .item1 h1{
+      font-family: huova;
+      font-size: 120px;
+      font-weight: 200;
+      text-transform:uppercase;
+      writing-mode: vertical-rl; 
+      transform: rotate(-180deg);
+      text-align: right;
+      
+
+  }
+
+  .item1 p{
+    font-family: huova;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+      font-size: 10px;
+      font-weight: 200;
+  }
+
+  /******* NAV *******/
+  .header-nav {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+   justify-content: center;
+    
+  }
+  
+  .header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: right;
+    
+  }
+  
+  .header-nav ul a {
+    padding: 1rem;
+  }
+  
+  .header-nav li a {
+    font-family: scientist;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    color: #d7cfc8;
+    text-decoration: none;
+  }
+  
+  .header-nav li a:hover {
+    color: #000;
+  }
+
+  /******* ABOUT *******/
+
+  .myself:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .text {
+    float: left;
+    width: 20%;
+    height: 500px;
+    padding:0;
+    position: relative;
+    margin-bottom: 100px;
+   }
+
+  .cream{
+    background-color:#f2f1ef;
+      
+    }
+
+  .black {
+    background-color: #f2f1ef;
+    
+  }
+
+  .cream h2{
+    color: #d7cfc8;
+    font-size: 70px;
+    font-family: huova;
+    font-weight: 200;
+    text-align: center;;
+  }
+  .black h2{
+    color: #000;
+    font-size: 70px;
+    font-family: huova;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .black p{
+    color:#000;
+    font-size: 12px;
+    padding: 0 12px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 30px;
+  }
+  .cream p{
+    color:#beb6af;
+    font-size: 12px;
+    padding: 0 12px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 30px;
+  }
+  .text .image-text{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 70px;
+  }
+
+  /******* WORK *********/
+
+  .work-grid-container {
+    display: grid;
+    gap: 25px;
+    background-color: #f2f1ef;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    padding: 0 20px;
+    
+  }
+  
+  .work-grid-container > div {
+    background-color: #f2f1ef;
+  }
+  
+  .work1 {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+    
+  }
+  .work2 {
+    grid-column: 3 / span 5;
+    grid-row: 1;
+    
+  }
+
+  .work3 {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    
+  }
+
+  .work4 {
+    grid-column: 4 / span 4;
+    grid-row: 2 / span 4;
+    
+  }
+
+  .work5 {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    
+  }
+
+
+
+  .work1 h3{
+    font-size: 160px;
+    font-family: scientist;
+    color: #000;
+    font-weight: 200;
+    line-height: .5px;
+    text-align: center;
+  
+    
+
+
+  }
+  
+  .link h4 {
+    font-family: huova;
+    font-size: 30px;
+    color: #f2f1ef;
+    background-color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .projects {
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+
+  .design {
+    position: relative;
+    padding: 30px 10px;
+    margin: 20px;
+   
+  }
+
+  .gdesign {
+    position: relative;
+    padding: 30px 10px;
+    margin: 20px;
+    
+  }
+
+  .photography {
+    position: relative;
+    padding: 80px 5px;
+    margin: 20px;
+  }
+
+  
+  .link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box img {
+    width: 60%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border: 1px solid #000;
+    padding: 10px;
+  }
+
+  .link a{
+    text-decoration: none;
+
+  }
+  .link p:hover{
+    color: #d7cfc8;
+  }
+
+  .link p{
+    color: #f2f1ef;
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+
+  }
+
+  /****** CONTACT *******/
+
+  .bottom:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .circle {
+    float: left;
+    width: 70%;
+    padding:0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: huova;
+   }
+.socials {
+    float: left;
+    width: 30%;
+    padding:0;
+    position: relative;
+    margin-bottom: 100px;
+   }
+
+#circ{
+    animation: spin 14s linear infinite;
+    font-family: huova;
+    font-size: 70px;
+}
+
+.contact{
+  font-family: huova;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 100px;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }}
+
+.socials a{
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  line-height: 100px;
+}
+
+.socials a:hover{
+  color:#d7cfc8;
+}
+.socials{
+  margin: auto 0;
+}
+
+/****** WEB PROJECTS *******/
+
+.top h1{
+  font-family: huova;
+  font-size: 100px;
+  color: #000;
+  font-weight: 200;
+  margin-bottom: 0;
+  line-height: 0;
+}
+.top p{
+  font-family: scientist;
+  font-size: 50px;
+  font-weight: 100;
+  color: #000;
+  margin-top: 0;
+  padding: 0 10px;
+}
+
+.projects-container {
+  
+  margin: 20px 0px 20px 50px;
+  
+  
+}
+
+.projects-background{
+  background-image: url('/img/projects-background.JPG');
+  background-repeat: no-repeat;
+  background-size: 300px 1080px;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.site h2{
+  font-family: huova;
+  color: #f2f1ef;
+  background-color: #000;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.projects-container p{
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #000;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.description{
+  width: 500px;
+}
+
+
+.btn-group {
+  margin-left: auto;
+  margin-right: auto;
+}
+  .btn-group button {
+    border: 1px solid #000; 
+    padding: 0px 10px; 
+    margin: 0 10px;
+    cursor: pointer;
+    justify-content: center;
+  }
+  .btn-group button:hover {
+    border: none;
+    
+  }
+
+  .btn-group a{
+    text-decoration: none;
+  }
+
+  .btn-group h2 {
+    font-family: huovo;
+    font-size: 7px;
+    font-weight: 400;
+    text-align: center;
+    color: #000;
+    letter-spacing: 3px;
+    
+  }
+
+  .home a{
+    text-decoration: none;
+  
+  }
+
+  .home h3{
+    color: #f2f1ef;
+    background-color: #000;
+    font-family: huova;
+    font-size: 10px;
+    font-weight: 100;
+    padding: 10px 0;
+    letter-spacing: 3px;
+  }
+
+  .home h3:hover{
+    color: #000;
+    background-color: #f2f1ef;
+  }
+
+  .home{
+    width: 50px;
+    margin: 50px;
+    float: right;
+    text-align: center;
+  }
+
+  /****** PHOTOGRAPHY *******/
+
+  .title-photography h1{
+    font-family: scientist;
+    font-size: 150px;
+    color: #000;
+    font-weight: 200;
+    padding: 50px 50px 0 50px;
+    margin-bottom: 0;
+    line-height: 0;
+  }
+  .title-photography p{
+    font-family: huova;
+    font-size: 10px;
+    font-weight: 100;
+    color: #000;
+    margin-top: 0;
+    padding:30px;
+  }
+
+  .wrapper {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    padding: 30px 0;
+    margin: 30px 0;
+    
+  }
+  .photobanner {
+    position: relative;
+    height: 233px;
+    display: flex;
+    width: 100%;
+    
+  }
+  
+  .photobanner img {
+    margin: 0px 25px;
+  }
+  
+  .photobanner {
+    animation: bannermove 50s linear infinite alternate-reverse;
+  }
+
+  .photobanner2 {
+    animation: bannermove 50s linear infinite alternate;
+  }
+
+  .photobanner2 {
+    position: relative;
+    height: 233px;
+    display: flex;
+    width: 100%;
+    
+  }
+  
+  .photobanner2 img {
+    margin: 0px 25px;
+  }
+  
+  @keyframes bannermove {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -3200px;
+    }
+  }
+
+  /****** WEB DESIGN ******/
+
+  .redesign {
+    position: relative;
+    text-align: center;
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+  }
+  .redesign:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    background: #000;
+    opacity: 20%;
+  }
+  .redesign img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .centered h2{
+    font-family: huova;
+    color: #f2f1ef;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+  }
+  
+  .redesign:hover .overlay {
+    opacity: 1;
+  }
+  
+  .links {
+    color: #f2f1ef;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .links h3 {
+    font-family: huova;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  .links p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Nanum Gothic', sans-serif;
+    color:#f2f1ef;
+  }
+
+  .center {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  /******** GRAPHIC DESIGN *******/
+
+  .graphic-design:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .graphic {
+    float: left;
+    width: 31%;
+    padding:0px;
+    margin:10px;
+   
+   
+   }
+
+   .graphic h1{
+    font-family: huova;
+    font-size: 100px;
+    font-weight: 200;
+    writing-mode: vertical-rl; 
+    transform: rotate(-180deg);
+    text-align: right;
+    
+
+}
+
+.graphic img{
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+  margin: 10px;
+}
+
+
+/****** RESPONSIVE ******/
+
+@media only screen and (max-width: 1000px) {
+  .item1 h1 {
+    font-size: 90px;
+    padding: 0;
+    
+  }
+  .item1 p{
+    margin-top: 0px;
+    font-size: 8px;
+  }
+  .cream h2{
+    font-size: 50px;
+  }
+  .black h2{
+    font-size: 50px;
+  }
+
+  .black p{
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .cream p{
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .work1 h3{
+    font-size: 90px;
+  }
+  
+  .link h4 {
+    font-size: 20px;
+  }
+  .link p{
+    font-size: 12px;
+  }
+  #circ{
+    font-size: 50px;
+}
+.socials a{
+  font-size: 14px;
+  line-height: 70px;
+}
+
+.top h1{
+  font-size: 60px;
+}
+.centered h2{
+  font-size: 30px;
+}
+
+.links h3{
+  font-size:12px;
+}
+
+.links p{
+  font-size:10px;
+}
+.links {
+  font-size: 12px;
+}
+
+.redesign{
+  width: 50%;
+}
+
+.title-photography h1 {
+  font-size: 100px;
+}
+
+
+}
+
+@media only screen and (max-width: 890px){
+  .graphic{
+    width: 100%
+  }
+  .graphic-design{
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .grid-container img{
+    display: none;
+  }
+  .grid-container {
+    display: block;
+    margin-bottom: 0;
+    height: auto;
+  }
+  .text {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .black p{
+    margin: 0 50px;
+  }
+  .cream p{
+    margin: 0 50px;
+  }
+  .myself{
+    padding-bottom: 100px;
+  }
+  .work-grid-container{
+    display: block;
+  }
+  .circle {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .socials {
+    text-align: center;
+    width: 100%;
+  }
+  .site h2{
+    font-size: 25px;
+   
+  }
+  
+  .projects-container p{
+    font-size: 10px;
+  }
+
+  .top h1{
+    font-size: 40px;
+  }
+  .top p{
+    font-size: 20px;
+  }
+  .home h3{
+    font-size: 8px;
+  }
+  .redesign{
+    width: 70%;
+  }
+
+  .photobanner {
+    height: 100px;
+  }
+  .photobanner2 {
+    height: 100px;
+  }
+  .photobanner img{
+    margin: 0 5px;
+  }
+  .photobanner2 img{
+    margin: 0 5px;
+  }
+  .wrapper {
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+  .title-photography h1 {
+    font-size: 60px;
+  }
+  .title-photography p {
+    font-size: 8px;
+  }
+  @keyframes bannermove {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -1200px;
+    }
+  }
+}
