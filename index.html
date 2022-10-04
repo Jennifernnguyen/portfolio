@@ -60,9 +60,9 @@
 
 <body>
 
-<div class="about" id="about">
+<div class="about " id="about">
 
-  <div class="myself">
+  <div class="myself fade-in">
     <div class="text black">
       <h2>A</h2>
       <p>welcome to my portfolio website! i am a 22 years old recent college graduate from lincoln, ne with a passion 
@@ -102,8 +102,8 @@
 
 <div class="work" id="work">
 
-  <div class="work-grid-container">
-    <div class="work1">
+  <div class="work-grid-container fade-in">
+    <div class="work1 fade-in">
       <h3>work</h3>
       <h3>work</h3>
       <h3>work</h3>
@@ -165,7 +165,7 @@
 
 
 <div class="contact" id="contact">
-  <div class="bottom">
+  <div class="bottom fade-in">
     <div class="circle">
       <div id="circ">
         &nbsp;want to get in touch?
@@ -180,6 +180,7 @@
     </div>
   </div>
 </div>
+<script src="/js/observer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
 
@@ -187,4 +188,6 @@
         let circ = new CircleType(document.getElementById('circ'));
         circ.raduis(360);
     </script>
+
+
     </body>
