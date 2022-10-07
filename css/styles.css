@@ -1,9 +1,23 @@
 /******* HEAD *******/
+html {
+  scroll-behavior: smooth;
+}
 
 body{
     background-color:#f2f1ef;
     overflow-x: hidden;
     margin: 0 auto;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 .grid-container {
     display: grid;
@@ -95,6 +109,18 @@ body{
     color: #000;
   }
 
+
+/******* SCROLL *******/
+section {
+  position: relative;
+  display: grid;
+  place-content:center;
+  height: 100vh;
+  color: #d7cfc8;
+}
+
+
+
   /******* ABOUT *******/
 
   .myself:after {
@@ -126,7 +152,7 @@ body{
     font-size: 70px;
     font-family: huova;
     font-weight: 200;
-    text-align: center;;
+    text-align: center;
   }
   .black h2{
     color: #000;
@@ -164,6 +190,8 @@ body{
   }
 
   /******* WORK *********/
+
+  
 
   .work-grid-container {
     display: grid;

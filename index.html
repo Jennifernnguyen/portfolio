@@ -62,7 +62,7 @@
 
 <div class="about " id="about">
 
-  <div class="myself">
+  <div class="myself reveal">
     <div class="text black">
       <h2>A</h2>
       <p>welcome to my portfolio website! i am a 22 years old recent college graduate from lincoln, ne with a passion 
@@ -103,14 +103,14 @@
 <div class="work" id="work">
 
   <div class="work-grid-container ">
-    <div class="work1">
+    <div class="work1 reveal">
       <h3>work</h3>
       <h3>work</h3>
       <h3>work</h3>
     </div>
-    <div class="work2"> 
+    <div class="work2 reveal"> 
       <div class="box">
-      <div class="projects">
+      <div class="projects fade-in">
         <img src="/img/box1.JPG" alt="web projects"/>
         <div class="link">
         <h4>web projects</h4>
@@ -120,9 +120,9 @@
       </div>
     </div>
 
-      <div class="work3">
+      <div class="work3 reveal">
         <div class="box">
-        <div class="design">
+        <div class="design fade-in">
           <img src="/img/box4.JPG" alt="web projects"/>
           <div class="link">
           <h4>web design</h4>
@@ -132,9 +132,9 @@
         </div>
       </div>
 
-      <div class="work4">
+      <div class="work4 reveal">
         <div class="box">
-        <div class="photography">
+        <div class="photography fade-in">
           <img src="/img/box2.JPG" alt="web projects"/>
           <div class="link">
           <h4>photography</h4>
@@ -144,9 +144,9 @@
         </div>
       </div>
 
-      <div class="work5">
+      <div class="work5 reveal">
         <div class="box">
-        <div class="gdesign">
+        <div class="gdesign fade-in">
           <img src="/img/box3.JPG" alt="web projects"/>
           <div class="link">
           <h4>graphic design</h4>
@@ -165,7 +165,7 @@
 
 
 <div class="contact" id="contact">
-  <div class="bottom">
+  <div class="bottom reveal">
     <div class="circle">
       <div id="circ">
         &nbsp;want to get in touch?
@@ -180,7 +180,9 @@
     </div>
   </div>
 </div>
-<script src="js/observer.js"></script>
+
+<script src="js/fade.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
 
@@ -188,6 +190,24 @@
         let circ = new CircleType(document.getElementById('circ'));
         circ.raduis(360);
     </script>
+<script type="text/javascript">
 
+  var images = new Array();
+  
+  function preloadImages(){
+  
+      for (i=0; i < preloadImages.arguments.length; i++){
+  
+           images[i] = new Image();
+  
+          images[i].src = preloadImages.arguments[i];
+  
+      }
+  
+  }
+  
+  preloadImages("1.jpg", "2.jpg", "3.jpg", "box1.jpg", "box2.jpg", "box3.jpg" );
+  
+  </script>
 
     </body>
