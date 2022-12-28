@@ -709,6 +709,21 @@ section {
     padding: 0;
     
   }
+  .item2 {
+    width: 80px;
+    padding: 40px;
+    margin: 20px;
+  }
+  .item3 {
+    width: 80px;
+    padding: 40px;
+    margin: 20px;
+  }
+  .item4 {
+    width: 80px;
+    padding: 40px;
+    margin: 20px;
+  }
   .item1 p{
     margin-top: 0px;
     font-size: 8px;
@@ -772,7 +787,17 @@ section {
   font-size: 100px;
 }
 
+.text {
+  width: 50%;
+}
 
+.title-about {
+  width:50%;
+}
+
+.title-about h2{
+  font-size: 100px;
+}
 }
 
 @media only screen and (max-width: 890px){
@@ -782,8 +807,20 @@ section {
   .graphic-design{
     padding: 0 20px;
   }
+
+ 
 }
 
+@media only screen and (max-width: 750px){
+
+  .work-grid-container{
+    display: block;
+  }
+
+  .work1 h3{
+    font-size: 50px;
+  }
+}
 @media only screen and (max-width: 650px) {
   .grid-container img{
     display: none;
@@ -807,9 +844,7 @@ section {
   .myself{
     padding-bottom: 100px;
   }
-  .work-grid-container{
-    display: block;
-  }
+ 
   .circle {
     width: 100%;
     padding-bottom: 50px;
@@ -869,5 +904,23 @@ section {
     to {
       left: -1200px;
     }
+  }
+
+  .text {
+    width: 75%;
+  }
+  
+  .title-about {
+    display: none;
+  }
+
+  .item2 {
+    display: none;
+  }
+  .item3 {
+    display: none;
+  }
+  .item4 {
+    display: none;
   }
 }
