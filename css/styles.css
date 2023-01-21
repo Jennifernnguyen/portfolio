@@ -19,13 +19,24 @@ body{
   transform: translateY(0);
   opacity: 1;
 }
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: #d7cfc8;
+  background: #000;
+
+}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
     grid-gap: 25px;
-    background-color: #f2f1ef;
     padding: 0 20px;
     margin-bottom: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
   }
   
@@ -94,6 +105,10 @@ body{
     z-index: 1;
     display: flex;
    justify-content: center;
+   position: absolute;
+   top: 5%;
+   left: 50%;
+   transform: translate(-50%, -50%);
     
   }
   
@@ -120,7 +135,7 @@ body{
   }
   
   .header-nav li a:hover {
-    color: #000;
+    color: #c9af8e;
   }
 
 
@@ -240,9 +255,31 @@ section {
     
   }
 
+.work-background {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: #000;
+  padding: 50px 0;
+}
 
+.work-centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
 
-  .work1 h3{
+.work-background img {
+  width: 50%;
+
+}
+
+  .work-background h3{
     font-size: 90px;
     font-family: huova;
     color: #f2f1ef;
@@ -250,6 +287,7 @@ section {
     font-weight: 200;
     text-align: center;
     margin-top: 0;
+    letter-spacing: 20px;
     
   }
   
@@ -817,7 +855,7 @@ section {
     display: block;
   }
 
-  .work1 h3{
+  .work-background h3{
     font-size: 50px;
   }
 }
